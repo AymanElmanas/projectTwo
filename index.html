@@ -12,15 +12,15 @@
     
     <br><br><br>
 
-<div class="input-container">
-	<h3 id='Personal_Details'>Personal Details</h3> <br>
+<div class="cv-container">
+	<form action="/cv.html" class="form-container" id='Personal_Details'>  
+	<h3 >Personal Details</h3> <br>
 	<div class="aaa"><label class="sc">
 			<div class="Title">Job Title</div>
            </label>
 		<div class="Personal_d">
-			<input type="text"  
-				 name="position" 
-				>
+			<input type="text" id="JobTitle" 
+				                     >
 		</div>
 		<div class="aaa"><label class="sc_n">
 				<div class="Title">First Name:</div>
@@ -28,8 +28,7 @@
 		</div>
 		</label>
 		<div class="Personal_d">
-			<input type="text"  
-				  >
+			<input type="text" id="FirstName">
 		</div>
 		<div class="aaa"><label class="sc_n">
 				<div class="Title">Last Name:</div>
@@ -37,152 +36,189 @@
 		</div>
 		</label>
 		<div class="Personal_d">
-			<input type="text"  
-				  >
-		</div>
+			<input type="text"  id="Last_Name" >
+		</div> 
+		
 		<div class="aaa"><label class="sc_n">
 				<div class="Title">Email:</div>
 		
 		</div>
 		</label>
 		<div class="Personal_d">
-			<input type="text"  
-				  >
+			<input type="text"  id="Email" >
 		</div>
 		<div class="ccc"><label class="sc_n">
-				<div class="Title"><div class="ccc"><label class="sc_n">
-				<div class="Title">Phone:</div>
+		<div class="Title">Phone:</div>
 		
 		</div>
 		</label>
 		<div class="Personal_d">
-			<input type="text"  
-				  >
-		
-
-	</div>
-<div>
-	<h3 id='Professional_Summary'>Professional Summary</h3>
+			<input type="text" id="Phone">  
+    </div>
+</div>
+</form>
+</div>
+	
+<div  class="cv-container">
+	<form action="cv.html" class="form-container" id="Professional_Summary"></form>
+	<h3 >Professional Summary</h3>
 	<div class="aaa"><label class="sc">
-			<div class="Title">Include clear sentences about your overall experience</div>
+			<div class="Ticontainertle">Include clear sentences about your overall experience</div>
 		</label>
 		<div class="textarea">
-			<textarea id="w3mission" rows="4" cols="50"></textarea>		
+			<textarea id="w3mission" rows="4" cols="50" id="experience"></textarea>		
 		</div>
-</div>
-<div>
-	<h3 id='Professional_Summary'>Employment History</h3>
+	</div>
+	</form>
+	</div>
+<div  class="cv-container">
+	<form action="cv.html" class="form-container" id='Employment_History'>
+	<h3>Employment History</h3>
 	
 		<div class="aaa"><label class="sc">
 				<div class="Title">Job Title</div>
 			</label>
 			<div class="Personal_d">
-				<input type="text" name="position">
+				<input type="text" id="Job_Title">
 			</div>
 			
 			<div class="Title">Description</div>
 		</label>
 		<div class="textarea">
 		
-			<textarea id="w3mission" rows="4" cols="50"></textarea>
+			<textarea id="w3mission" rows="4" cols="50" id="Description"></textarea>
 		</div>
 		</div>
+		</form>
 	</div>
-	<div>
-		<h3 id='Professional_Summary'>Education</h3>
+	
+	<div class="Education-cont">
+		<form action="cv.html" class="form-container" id="Education">
+		<h3 >Education</h3>
 	
 		<div class="aaa"><label class="sc">
 				<div class="Title">school</div>
 			</label>
 			<div class="Personal_d">
-				<input type="text" name="position">
+				<input type="text" id="school">
 			</div>
 			<div class="aaa"><label class="sc">
 					<div class="Title">Degree</div>
 				</label>
 				<div class="Personal_d">
-					<input type="text" name="position">
+					<input type="text" id="Degree">
 				</div>
 				<div class="aaa"><label class="sc">
 						<div class="Title">Star & End Date</div>
 					</label>
 					<div class="Personal_d">
-						<input type="text" name="position">  <input type="text" name="position">
+						<input type="text" id="Star">  <input type="text" id="End">
 					</div>
 			<div class="Title">Description</div>
 			</label>
 			<div class="textarea">
 	
-				<textarea id="w3mission" rows="4" cols="50"></textarea>
+				<textarea id="w3mission" rows="4" cols="50" id="Description2"></textarea>
 			</div>
 		</div>
 	</div>
-	<div>
-		<h3 id='Professional_Summary'>WebSite & social Media</h3>
+	</div>
+	</form>
+	</div>
+	
+	<div  class="cv-container">
+		<form action="cv.html" class="form-container" id="WebSite ">
+		<h3 >WebSite & social Media</h3>
 	
 		<div class="aaa"><label class="sc">
 				<div class="Title">label</div>
 			</label>
 			<div class="Personal_d">
-				<input type="text" name="position">
+				<input type="text" id="label"  >
 			</div>
 			<div class="aaa"><label class="sc">
 					<div class="Title">link</div>
 				</label>
 				<div class="Personal_d">
-					<input type="text" name="position">
+					<input type="text" id="link">
 				</div>
+				</div>
+				</div>
+				</form>
+	</div>
+
 				
-			</div>
-			<h3 id='Professional_Summary'>skill</h3>
+			<div  class="cv-container">
+              <form action="cv.html" class="form-container" id="skill">
+			<h3 >skill</h3>
 			
 			<div class="aaa"><label class="sc">
 					<div class="Title">skill</div>
 				</label>
 				<div class="Personal_d">
-					<input type="text" name="position">
+					<input type="text" id="skill">
 				</div>
-				<h3 id='Professional_Summary'>Courses</h3>
+				</div>
+				</form>
+				</div>
+				<div class="cv-container">
+					<form action="cv.html" class="form-container" id="courses">
+				<h3 >Courses</h3>
 				
 				<div class="aaa"><label class="sc">
 						<div class="Title">Course</div>
 					</label>
 					<div class="Personal_d">
-						<input type="text" name="position">
+						<input type="text" id="Course">
 					</div>
 					<div class="Title">Star & End Date</div>
 					</label>
 					<div class="Personal_d">
-						<input type="text" name="position"> <input type="text" name="position">
+						<input type="text" id="Star2"> <input type="text" id="Date2">
 					</div>
-					<h3 id='Professional_Summary'>Languages</h3>
+					</div>
+					</form>
+					</div>
+					<div  class="cv-container">
+						<form action="cv.html" class="form-container" id="Languages">
+					<h3 >Languages</h3>
 					
 					<div class="aaa"><label class="sc">
 							<div class="Title">Language</div>
 						</label>
 						
 						<div class="Personal_d">
-							<input type="text" name="position">
+							<input type="text" id="Language">
 						</div>
 						<label class="sc"> Level </label>
 						<div class="Personal_d">
-							<select id="meals" class="select">
-								<option value="price15">Native speaker</option>
-								<option value="price18">Highly proficient</option>
-								<option value="price15">Very good command</option>
-								<option value="price15">Good working knowledge</option>
-								<option value="price15">Working knowledge</option>
-								<option value="price12">C2</option>
-								<option value="price12">C1</option>
-								<option value="price10">B2</option>
-								<option value="price20">B1+</option>
-								<option value="price28">B1</option>
-								<option value="price20">A2</option>
-								<option value="price28">A1</option>
+							<select id="Level" class="select">
+								<option value="Native">Native speaker</option>
+								<option value="Highly">Highly proficient</option>
+								<option value="VeryGood">Very good command</option>
+								<option value="C2">C2</option>
+								<option value="C1">C1</option>
+								<option value="B2">B2</option>
+								<option value="B1+">B1+</option>
+								<option value="B1">B1</option>
+								<option value="A2">A2</option>
+								<option value="A1">A1</option>
 							</select>
 						</div>
-						
-</body>
+					</div>
+						</form>
+				</div>
+				
+				
+					<div class="buttons">
+						<button id="Submit">Submit</button>
+						<button id="Eidt">Edit</button>
+						<button buttonsid ="print" >Print</button>
+					</div>
+		
+		
+</body> 
 <script type="text/javascript" src="script.js"></script>
+
 </html>
 
