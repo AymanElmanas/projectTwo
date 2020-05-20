@@ -1,13 +1,10 @@
 
    body{
-  text-align: center;
- 
-  background-image: url("wood.jpg");
-  background-size: 1500px;
-   border: 2px solid; 
-   color: #f31212;
+   text-align: center;
+   background-image: url("wood.jpg");
+   background-size: 1500px;    
+   color: #f0a966;
    /* font-family: 'Open Sans', sans-serif; */
-   /* font-family: fantasy; */
-    background-color:lightgreen;
+   background-color:lightgreen;
 }
 
