@@ -1,74 +1,111 @@
 $(document).ready(function(){
     
-    var JobTitle = $("JobTitle").val();
-    var FirstName = $("FirstName").val();
-    var Last_Name = $("Last_Name").val();
-    var Email = $("Email").val();
-    var Phone = $("Phone").val();
+    // var JobTitle = $("#JobTitle").val();
+    // var FullName = $("#FullName").val();
+    // var Email = $("#Email").val();
+    // var Phone = $("#Phone").val();
+    // var textarea = $("#textarea").val();
 
-    var JobTitle1 = $("JobTitle1").val();
-    var Description = $("Description").val();
-
-    var school = $("school").val();
-    var Degree = $("Degree").val();
-    var Star = $("Star").val();
-    var End = $("End").val();
-    var DescriptionS = $("DescriptionS").val();
+    // var Job_Title1 = $("#Job_Title1").val();
+    // var Experience = $("#Experience").val();
+     
+    // var DescriptionEdu = $("#DescriptionEdu").val();
     
-    var label = $("label").val();
-    var link = $("link").val();
+    // var skill = $("#skill").val();
+    // var DescriptionSkill = $("#DescriptionSkill").val();
 
-    var skill = $("skill").val();
+    // var Technical = $("#Technical").val();
 
-    var Course = $("Course").val();
-    var Star2 = $("Star2").val();
-    var Data2 = $("Data2").val();
 
-    var Language = $("Language").val();
-    var Level = $("Level").val();
+    // var Language = $("#Language").val();
+    // var Level = $("#Level").val();
     
 
     
-    var data = {
-        PersonalDetails: {
-            JobTitle: JobTitle,
-            FirstName: FirstName,
-            LastName: LastName,
-            Email: Email,
-            Phone: Phone,
-        },
-        ProfessionalSummary: {
-            experience: experience
-                   },
-        EmploymentHistory: {
-            JobTitle1: JobTitle1,
-            Description: Description,
-        },
-        Education: {
-            school: school,
-            Degree: Degree,
-            StarDate: Star,
-            EndDate: End,
-            DescriptionS: DescriptionS
-        },
-        WebSites: {
-            label: label,
-            FirstName: link,
-        },
-        skill:{
-            skill: skill
-        },
-        Courses: {
-            Course: Course,
-            StarDateC: Star2,
-            EndDateC: Data2,
-        },
-      Languages:{
-          Language: Language,
-          Level: Level
-       }
-    };
+    // var data = {
+    //     PersonalDetails: {
+    //         JobTitle: $("#JobTitle").val(),
+    //         FirstName: FullName,
+    //         Email: Email,
+    //         Phone: Phone,
+    //     },
+    //     ProfessionalSummary: {
+    //         profile: profile
+    //                },
+    //     EmploymentHistory: {
+    //         JobTitle1: Job_Title1,
+    //         Experience: Experience,
+    //     },
+    //     Education: {
+        
+    //         DescriptionEdu: DescriptionEdu
+    //     },
+    //     skill:{
+    //         skill: skill,
+    //         DescriptionSkill: DescriptionSkill
+    //     },
+    //     Technicals: {
+    //         Technical: Technical,
+            
+    //     },
+    //   Languages:{
+    //       Language: Language,
+    //       Level: Level
+    //    }
+    // };
+    $('#PersonalDetailsBtn').click(function(){
+             
+        $('#PersonalDetailsF  ').append("<h1>" + $("#FullName").val()+"</h1>");
+        $('#PersonalDetailsF ').append("<h2>" + $("#JobTitle").val() + "</h2>");
+        $('#PersonalDetailsF1  ').append("<h3>" + $("#Email").val() + "</h3>");
+        $('#PersonalDetailsF1 ').append("<h3>" + $("#Phone").val() + "</h3>");
 
+    
+    });
+    $('#profileBtn').click(function () {
+        Console.log($("#textareP").val());
+        $('#ProfileF').append("<p>" + $("#textareP").val() + "</p>")
+    });
+    $('#EducationBtn').click(function () {
+       
+    });
+    $('#profileBtn').click(function () {
+       
+    });
+    $('#skillBtn').click(function () {
+       
+    });
+    $('#TechnicalBtn').click(function () {
+       
+    });
+    $('#LanguagesBtn').click(function () {
+       
+    });
+    $('#printCv').click(function () {
+        
+        $('#doc2').printThis({
+            debug: false,               // show the iframe for debugging
+            importCSS: true,            // import parent page css
+            importStyle: false,         // import style tags
+            printContainer: true,       // print outer container/$.selector
+            loadCSS: "file:///C:/Users/-/Desktop/projectTwo/resume.css",                // path to additional css file - use an array [] for multiple
+            pageTitle: "",              // add title to print page
+            removeInline: false,        // remove inline styles from print elements
+            removeInlineSelector: "*",  // custom selectors to filter inline styles. removeInline must be true
+            printDelay: 333,            // variable print delay
+            header: null,               // prefix to html
+            footer: null,               // postfix to html
+            base: false,                // preserve the BASE tag or accept a string for the URL
+            formValues: true,           // preserve input/form values
+            canvas: false,              // copy canvas content
+            doctypeString: '<!DOCTYPE html>', // enter a different doctype for older markup
+            removeScripts: false,       // remove script tags from print content
+            copyTagClasses: false,      // copy classes from the html & body tag
+            beforePrintEvent: null,     // callback function for printEvent in iframe
+            beforePrint: null,          // function called before iframe is filled
+            afterPrint: null            // function called before iframe is removed
+        });
+    })
 
     });
 

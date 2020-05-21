@@ -3,17 +3,20 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css"></link>
-	<script src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+	<link rel="stylesheet" type="text/css"
+		href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" />
+	<script src="jQuery.js"></script>
+	<script src="printThis.js"></script>
 	</head>	
 	
 <body>   
-    
+
 <h1 id ='Build_Your_CV'>CV Builder</h1>
     
     <br><br><br>
-
 <div class="cv-container">
-	<form action="/cv.html" class="form-container" id='Personal_Details'>  
+	
 	<h3 >Personal Details</h3> <br>
 	<div class="aaa"><label class="sc">
 			<div class="Title">Job Title</div>
@@ -23,22 +26,13 @@
 				                     >
 		</div>
 		<div class="aaa"><label class="sc_n">
-				<div class="Title">First Name:</div>
+				<div class="Title">Full Name:</div>
 				
 		</div>
 		</label>
 		<div class="Personal_d">
-			<input type="text" id="FirstName">
+			<input type="text" id="FullName">
 		</div>
-		<div class="aaa"><label class="sc_n">
-				<div class="Title">Last Name:</div>
-		
-		</div>
-		</label>
-		<div class="Personal_d">
-			<input type="text"  id="Last_Name" >
-		</div> 
-		
 		<div class="aaa"><label class="sc_n">
 				<div class="Title">Email:</div>
 		
@@ -56,100 +50,77 @@
 			<input type="text" id="Phone">  
     </div>
 </div>
-</form>
+<div class="buttons">
+	<button id="PersonalDetailsBtn">Add</button>
+</div>
 </div>
 	
 <div  class="cv-container">
-	<form action="cv.html" class="form-container" id="Professional_Summary"></form>
 	<h3 >Professional Summary</h3>
+	<div class="aaa"><label class="sc_n">
+			<div class="Title">Job Title</div>
+	
+	</div>
+	</label>
+	<div class="Personal_d">
+		<input type="text" id="job">
+	</div>
 	<div class="aaa"><label class="sc">
 			<div class="Ticontainertle">Include clear sentences about your overall experience</div>
 		</label>
 		<div class="textarea">
-			<textarea id="w3mission" rows="4" cols="50" id="experience"></textarea>		
+			<textarea id="w3mission" rows="4" cols="50" id="textareP" ></textarea>		
 		</div>
 	</div>
-	</form>
+	<div class="buttons">
+		<button id="profileBtn">Add</button>
+	</div>
 	</div>
 <div  class="cv-container">
-	<form action="cv.html" class="form-container" id='Employment_History'>
-	<h3>Employment History</h3>
+	
+	<h3>Experience</h3>
 	
 		<div class="aaa"><label class="sc">
 				<div class="Title">Job Title</div>
 			</label>
 			<div class="Personal_d">
-				<input type="text" id="Job_Title">
+				<input type="text" id="Job_Title1">
 			</div>
 			
 			<div class="Title">Description</div>
 		</label>
 		<div class="textarea">
 		
-			<textarea id="w3mission" rows="4" cols="50" id="Description"></textarea>
+			<textarea id="w3mission" rows="4" cols="50" id="Experience"></textarea>
 		</div>
 		</div>
-		</form>
+		
+		<div class="buttons">
+			<button id="ExperienceBtn">Add</button>
+		</div>
 	</div>
 	
-	<div class="Education-cont">
-		<form action="cv.html" class="form-container" id="Education">
+	<div class="cv-container">
+		
 		<h3 >Education</h3>
 	
 		<div class="aaa"><label class="sc">
-				<div class="Title">school</div>
-			</label>
-			<div class="Personal_d">
-				<input type="text" id="school">
-			</div>
-			<div class="aaa"><label class="sc">
-					<div class="Title">Degree</div>
-				</label>
-				<div class="Personal_d">
-					<input type="text" id="Degree">
-				</div>
-				<div class="aaa"><label class="sc">
-						<div class="Title">Star & End Date</div>
-					</label>
-					<div class="Personal_d">
-						<input type="text" id="Star">  <input type="text" id="End">
-					</div>
+				
 			<div class="Title">Description</div>
 			</label>
 			<div class="textarea">
-	
-				<textarea id="w3mission" rows="4" cols="50" id="Description2"></textarea>
+				<textarea id="w3mission" rows="4" cols="50" id="DescriptionEdu"></textarea>
 			</div>
 		</div>
 	</div>
 	</div>
-	</form>
+	<div class="buttons">
+		<button id="EducationBtn">Add</button>
 	</div>
-	
-	<div  class="cv-container">
-		<form action="cv.html" class="form-container" id="WebSite ">
-		<h3 >WebSite & social Media</h3>
-	
-		<div class="aaa"><label class="sc">
-				<div class="Title">label</div>
-			</label>
-			<div class="Personal_d">
-				<input type="text" id="label"  >
-			</div>
-			<div class="aaa"><label class="sc">
-					<div class="Title">link</div>
-				</label>
-				<div class="Personal_d">
-					<input type="text" id="link">
-				</div>
-				</div>
-				</div>
-				</form>
 	</div>
 
-				
 			<div  class="cv-container">
-              <form action="cv.html" class="form-container" id="skill">
+              
 			<h3 >skill</h3>
 			
 			<div class="aaa"><label class="sc">
@@ -158,29 +129,34 @@
 				<div class="Personal_d">
 					<input type="text" id="skill">
 				</div>
+				<div class="Title">Description</div>
+				</label>
+				<div class="textarea">
+				
+					<textarea id="w3mission" rows="4" cols="50" id="DescriptionSkill"></textarea>
 				</div>
-				</form>
+				<div class="buttons">
+					<button id="skillBtn">Add</button>
+				</div>
 				</div>
 				<div class="cv-container">
-					<form action="cv.html" class="form-container" id="courses">
-				<h3 >Courses</h3>
+			
+				<h3 >Technical</h3>
 				
 				<div class="aaa"><label class="sc">
-						<div class="Title">Course</div>
+						<div class="Title">Technical</div>
 					</label>
 					<div class="Personal_d">
-						<input type="text" id="Course">
+						<input type="text" id="Technical">
 					</div>
-					<div class="Title">Star & End Date</div>
-					</label>
-					<div class="Personal_d">
-						<input type="text" id="Star2"> <input type="text" id="Date2">
+					
 					</div>
+					<div class="buttons">
+						<button id="TechnicalBtn">Add</button>
 					</div>
-					</form>
 					</div>
 					<div  class="cv-container">
-						<form action="cv.html" class="form-container" id="Languages">
+						
 					<h3 >Languages</h3>
 					
 					<div class="aaa"><label class="sc">
@@ -206,18 +182,207 @@
 							</select>
 						</div>
 					</div>
-						</form>
+					<div class="buttons">
+						<button id="LanguagesBtn">Add</button>
+					</div>
 				</div>
 								
 					<div class="buttons">
 						<button id="Submit">Submit</button>
-						<button id="Edit">Edit</button>
-						<button buttonsid ="print" >Print</button>
 					</div>
-		
+	
+		<section id="printForm" class="printForm">
+			<div id="doc2" class="yui-t7">
+				<div id="inner">
+			
+					<div id="hd">
+						<div class="yui-gc">
+							<div id="PersonalDetailsF" class="yui-u first">
+								
+							</div>
+			
+							<div class="yui-u">
+								<div  id="PersonalDetailsF1" class="contact-info">
+									<button id="printCv">Download PDF</button>
+									<h3></h3>
+									<h3></h3>
+								</div>
+								<!--// .contact-info -->
+							</div>
+						</div>
+						<!--// .yui-gc -->
+					</div>
+					<!--// hd -->
+			
+					<div id="bd">
+						<div id="yui-main">
+							<div class="yui-b">
+			
+								<div  class="yui-gf">
+									<div class="yui-u first">
+										<h2>Profile</h2>
+									</div>
+									<div id="profileF" class="yui-u">
+										
+									</div>
+								</div>
+								<!--// .yui-gf -->
+			
+								<div class="yui-gf">
+									<div class="yui-u first">
+										<h2>Skills</h2>
+									</div>
+									<div class="yui-u">
+			
+										<div id="SkillsF" class="talent">
+											<h2></h2>
+											<p></p>
+										</div>
+			
+										<div class="talent">
+											<h2></h2>
+											<p> </p>
+										</div>
+			
+										<div class="talent">
+											<h2>Project Direction</h2>
+											<p>Proven ability to lead and manage a wide variety of design and development
+												projects in team and independent situations.</p>
+										</div>
+									</div>
+								</div>
+								<!--// .yui-gf -->
+			
+								<div class="yui-gf">
+									<div class="yui-u first">
+										<h2>Technical</h2>
+									</div>
+									<div class="yui-u">
+										<ul class="talent">
+											<li>XHTML</li>
+											<li>CSS</li>
+											<li class="last">Javascript</li>
+										</ul>
+			
+										<ul class="talent">
+											<li>Jquery</li>
+											<li>PHP</li>
+											<li class="last">CVS / Subversion</li>
+										</ul>
+			
+										<ul class="talent">
+											<li>OS X</li>
+											<li>Windows XP/Vista</li>
+											<li class="last">Linux</li>
+										</ul>
+									</div>
+								</div>
+								<!--// .yui-gf-->
+			
+								<div class="yui-gf">
+			
+									<div class="yui-u first">
+										<h2>Experience</h2>
+									</div>
+									<!--// .yui-u -->
+			
+									<div class="yui-u">
+			
+										<div class="job">
+											<h2>Facebook</h2>
+											<h3>Senior Interface Designer</h3>
+											<h4>2005-2007</h4>
+											<p>Intrinsicly enable optimal core competencies through corporate relationships.
+												Phosfluorescently implement worldwide vortals and client-focused
+												imperatives. Conveniently initiate virtual paradigms and top-line
+												convergence. </p>
+										</div>
+			
+										<div class="job">
+											<h2>Apple Inc.</h2>
+											<h3>Senior Interface Designer</h3>
+											<h4>2005-2007</h4>
+											<p>Progressively reconceptualize multifunctional "outside the box" thinking
+												through inexpensive methods of empowerment. Compellingly morph extensive
+												niche markets with mission-critical ideas. Phosfluorescently deliver
+												bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
+										</div>
+			
+										<div class="job">
+											<h2>Microsoft</h2>
+											<h3>Principal and Creative Lead</h3>
+											<h4>2004-2005</h4>
+											<p>Intrinsicly transform flexible manufactured products without excellent
+												intellectual capital. Energistically evisculate orthogonal architectures
+												through covalent action items. Assertively incentivize sticky platforms
+												without synergistic materials. </p>
+										</div>
+										<div class="yui-gf">
+			
+											<div class="job last">
+												<h2>International Business Machines (IBM)</h2>
+												<h3>Lead Web Designer</h3>
+												<h4>2001-2004</h4>
+												<p>Globally re-engineer cross-media schemas through viral methods of
+													empowerment. Proactively grow long-term high-impact human capital and
+													highly efficient innovation. Intrinsicly iterate excellent e-tailers
+													with timely e-markets.</p>
+											</div>
+			
+										</div>
+										<!--// .yui-u -->
+									</div>
+									<!--// .yui-gf -->
+								</div>
+			
+			
+								<div class="yui-gf last">
+									<div class="yui-u first">
+										<h2>Education</h2>
+									</div>
+									<div class="yui-u">
+										<h2>Indiana University - Bloomington, Indiana</h2>
+										<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong> </h3>
+									</div>
+								</div>
+								<!--// .yui-gf -->
+			
+								<div class="yui-gf last">
+									<div class="yui-u first">
+										<h2>Languages</h2>
+									</div>
+									<div class="yui-u">
+										<h2>Indiana University - Bloomington, Indiana</h2>
+										<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong> </h3>
+									</div>
+								</div>
+								<!--// .yui-gf -->
+			
+			
+							</div>
+							<!--// .yui-b -->
+						</div>
+						<!--// yui-main -->
+					</div>
+					<!--// bd -->
+			
+					<div id="ft">
+						<p>Jonathan Doe &mdash; <a href="mailto:name@yourdomain.com">name@yourdomain.com</a> &mdash; (313) -
+							867-5309</p>
+					</div>
+					<!--// footer -->
+			
+				</div><!-- // inner -->
+			
+			
+			</div>
+			<!--// doc -->
+	</section>
 		
 </body> 
 <script type="text/javascript" src="script.js"></script>
-
+<script>
+	
+</script>
 </html>
 
