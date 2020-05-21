@@ -63,8 +63,9 @@ $(document).ready(function(){
     
     });
     $('#profileBtn').click(function () {
-        Console.log($("#textareP").val());
-        $('#ProfileF').append("<p>" + $("#textareP").val() + "</p>")
+        var comment = $.trim($("#textareProfile").val());
+        console.log($.trim($("#textareProfile").val()));
+        $('#ProfileF').append("<p>" + $("#textareProfile").val() + "</p>")
     });
     $('#EducationBtn').click(function () {
        
