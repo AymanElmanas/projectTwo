@@ -7,7 +7,7 @@ $(document).ready(function(){
     // var textarea = $("#textarea").val();
 
     // var Job_Title1 = $("#Job_Title1").val();
-    // var Experience = $("#Experience").val();
+    // var Experience = $("#textareaExperience").val();
      
     // var DescriptionEdu = $("#DescriptionEdu").val();
     
@@ -34,7 +34,7 @@ $(document).ready(function(){
     //                },
     //     EmploymentHistory: {
     //         JobTitle1: Job_Title1,
-    //         Experience: Experience,
+    //         Experience: textareaExperience,
     //     },
     //     Education: {
         
@@ -53,12 +53,14 @@ $(document).ready(function(){
     //       Level: Level
     //    }
     // };
+    var acc =0;
     $('#PersonalDetailsBtn').click(function(){
              
         $('#PersonalDetailsF  ').append("<h1>" + $("#FullName").val()+"</h1>");
         $('#PersonalDetailsF ').append("<h2>" + $("#JobTitle").val() + "</h2>");
         $('#PersonalDetailsF1  ').append("<h3>" + $("#Email").val() + "</h3>");
         $('#PersonalDetailsF1 ').append("<h3>" + $("#Phone").val() + "</h3>");
+        $('#ft').append("<p>" + $("#FullName").val() + "   " + $("#Email").val() + "   " + $("#Phone").val()+"</p>")
 
     
     });
@@ -66,20 +68,28 @@ $(document).ready(function(){
         
         $('#profileF').append("<p>" + $("#textareProfile").val() + "</p>")
     });
+    $('#ExperienceBtn').click(function () {
+    
+        $('#ExperienceF ').append("<h2>" + $("#Job_Title1").val() + "</h2>");
+        $('#ExperienceF ').append("<p>" + $("#textareaExperience").val() + "</p>");
+       
+       
+    });
     $('#EducationBtn').click(function () {
-       
-    });
-    $('#profileBtn').click(function () {
-       
-    });
+           $('#EducationF').append("<p>" + $("#DescriptionEdu").val() + "</p1>");
+             });
+        
+    $('#LanguagesBtn').click(function () {
+        $('#LanguagesF').append($("#LevelSelect").val());
+        $('#LanguagesF').append("<h2>" + $('#Language').val() + "</h2>");
+            });
     $('#skillBtn').click(function () {
-       
+        $('#SkillsF ').append("<h2>" + $("#skill").val() + "</h2>");
+        $('#SkillsF ').append("<p>" + $("#DescriptionSkill").val() + "</p>");
     });
     $('#TechnicalBtn').click(function () {
-       
-    });
-    $('#LanguagesBtn').click(function () {
-       
+        $('#TechnicalF ').append("<h2>" + $("#Technical").val() + "</2>");
+
     });
     $('#printCv').click(function () {
         
